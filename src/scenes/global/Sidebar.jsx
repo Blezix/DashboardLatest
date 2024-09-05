@@ -40,10 +40,15 @@ const Sidebar = () => {
           padding: { xs: 0, sm: 0 },
         }}
       >
-        <Typography variant="h5" sx={{
-          color: "text.secondary",
-          padding: { xs: 2, sm: 2 },
-        }}>Company</Typography>
+        <Typography
+          variant="h5"
+          sx={{
+            color: "text.secondary",
+            padding: { xs: 2, sm: 2 },
+          }}
+        >
+          Company
+        </Typography>
       </Box>
       <Box
         sx={{
@@ -63,33 +68,40 @@ const Sidebar = () => {
           }}
         >
           {sites.map((site, index) => (
-      <ListItem
-      button
-      key={index}
-      sx={{
-        color: activeSite === site ? theme.palette.text.secondary : theme.palette.text.notActive,
-        bgcolor: activeSite === site ? theme.palette.grey[900] : "transparent",
-        "&:hover": {
-          bgcolor: theme.palette.grey[800],
-        },
-      }}
-      selected={activeSite === site}
-      onClick={() => handleSiteClick(site)}
-    >
-      <ListItemText
-        primary={site}
-        sx={{
-          fontSize: {
-            xs: "0.75rem", // Extra-small screens
-            sm: "1rem",    // Small screens
-            md: "1.25rem", // Medium screens
-            lg: "1.5rem",  // Large screens
-            xl: "1.75rem", // Extra-large screens
-          },
-          color: activeSite === site ? theme.palette.text.secondary : theme.palette.text.notActive,
-        }}
-      />
-    </ListItem>
+            <ListItem
+              button
+              key={index}
+              sx={{
+                color:
+                  activeSite === site
+                    ? theme.palette.text.secondary
+                    : theme.palette.text.notActive,
+                bgcolor:
+                  activeSite === site ? theme.palette.grey[900] : "transparent",
+                "&:hover": {
+                  bgcolor: theme.palette.grey[800],
+                },
+              }}
+              selected={activeSite === site}
+              onClick={() => handleSiteClick(site)}
+            >
+              <ListItemText
+                primary={site}
+                sx={{
+                  fontSize: {
+                    xs: "0.75rem", // Extra-small screens
+                    sm: "1rem", // Small screens
+                    md: "1.25rem", // Medium screens
+                    lg: "1.5rem", // Large screens
+                    xl: "1.75rem", // Extra-large screens
+                  },
+                  color:
+                    activeSite === site
+                      ? theme.palette.text.secondary
+                      : theme.palette.text.notActive,
+                }}
+              />
+            </ListItem>
           ))}
         </List>
         <Box
