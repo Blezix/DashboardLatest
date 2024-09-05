@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Tabs, Tab, Typography } from "@mui/material";
-
+import CustomIcon from "./CustomIcon";
+import SimCardIcon from '@mui/icons-material/SimCard';
 const DashboardTabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -9,7 +10,7 @@ const DashboardTabs = () => {
   };
 
   return (
-    <Box sx={{ width: "90%", pl: "5%" }}>
+    <Box sx={{ width: "90%", minWidth:"500px", pl: "5%" }}>
       <Box padding={2} bgcolor={"grey.light"}>
         <Box
           sx={{
@@ -44,12 +45,50 @@ const DashboardTabs = () => {
               <Box>
                 <Box
                   sx={{
-                    width: "250px",
-                    height: "140px",
+                    width: {
+                      xs: "200px", // small screens
+                      sm: "250px", // medium screens
+                      md: "250px", // large screens
+                      lg: "300px", // extra large screens
+                      xl: "350px"
+                    },
+                    height: {
+                      xs: "120px", // small screens
+                      sm: "150px", // medium screens
+                      md: "150px", // large screens
+                      lg: "180px", // extra large screens
+                      xl: "200px", // extra large screens
+                    },
                     borderRadius: "20px",
                     bgcolor: "primary.main",
+                    display: "flex",
+                    flexDirection: "column",
                   }}
-                ></Box>
+                >
+                 
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "space-around",
+                      alignItems: "start",
+                      p: 3,
+                      width: "100%",
+                      height: "50%",
+                    }}
+                  >
+                    <Typography
+                      color={"#d2dde3"}
+                      letterSpacing={1}
+                      variant="h7"
+                    >
+                      1234 1234 1234 1234
+                    </Typography>
+                    <Typography color={"#d2dde3"} variant="h7">
+                      John Doe
+                    </Typography>
+                  </Box>
+                </Box>
               </Box>
               <Box></Box>
             </Box>
