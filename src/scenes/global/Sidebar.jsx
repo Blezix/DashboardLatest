@@ -26,6 +26,8 @@ const Sidebar = () => {
       sx={{
         width: { xs: "100%", sm: "20%" },
         height: "100vh",
+        position: "sticky",
+        top: 0,
       }}
     >
       <Box

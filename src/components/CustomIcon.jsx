@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const CustomIcon = () => {
   return (
@@ -15,16 +15,16 @@ const CustomIcon = () => {
       <defs id="defs146" />
       <path
         style={{
-          fill: '#9e0101',
+          fill: "#9e0101",
           fillOpacity: 1,
-          fillRule: 'nonzero',
-          stroke: 'none',
+          fillRule: "nonzero",
+          stroke: "none",
           strokeWidth: 1.00158,
-          strokeLinecap: 'round',
-          strokeLinejoin: 'round',
-          strokeDasharray: 'none',
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeDasharray: "none",
           strokeOpacity: 1,
-          paintOrder: 'stroke fill markers',
+          paintOrder: "stroke fill markers",
         }}
         d="M 38.287452,-0.09008812 28.017406,2.7927319 38.647804,1.8017625 31.801108,7.5674023 39.90904,4.1440536 37.026219,14.233924 42.881948,5.8557281 39.728864,19.278858 45.764766,7.3872261 45.944942,20.900445 49.998909,9.2790768 53.151993,21.981502 53.061904,-0.09008812 Z"
         id="path4741"

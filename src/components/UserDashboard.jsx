@@ -1,7 +1,8 @@
 import React from "react";
 import { Box, Avatar, Typography } from "@mui/material";
-import UpArrow from '@mui/icons-material/CallMade';
-import DownArrow from '@mui/icons-material/CallReceived';const UserDashboard = () => {
+import UpArrow from "@mui/icons-material/CallMade";
+import DownArrow from "@mui/icons-material/CallReceived";
+const UserDashboard = () => {
   return (
     <Box
       width={"100%"}
@@ -11,7 +12,7 @@ import DownArrow from '@mui/icons-material/CallReceived';const UserDashboard = (
     >
       <Box
         height={"40%"}
-display={"flex"}
+        display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
       >
@@ -46,11 +47,19 @@ display={"flex"}
             variant="circular"
             src=""
             alt=""
-            
-            sx={{ width: "45px", height: "45px", margin: "0 5% 0 5%",bgcolor:"greenAccent.main" }}
-          ><UpArrow sx={{
-            color:"black"
-          }}/></Avatar>
+            sx={{
+              width: "45px",
+              height: "45px",
+              margin: "0 5% 0 5%",
+              bgcolor: "greenAccent.main",
+            }}
+          >
+            <UpArrow
+              sx={{
+                color: "black",
+              }}
+            />
+          </Avatar>
           <Box display={"flex"} width="30%" flexDirection={"column"} pl={2}>
             <Typography variant="h7" color="grey.main">
               Income
@@ -67,17 +76,24 @@ display={"flex"}
           display={"flex"}
           alignItems={"center"}
         >
-            <Avatar
+          <Avatar
             variant="circular"
-           
             src=""
             alt=""
             p={1}
-            sx={{ width: "45px", height: "45px", margin: "0 5% 0 5%",              bgcolor:"redAccent.main"
+            sx={{
+              width: "45px",
+              height: "45px",
+              margin: "0 5% 0 5%",
+              bgcolor: "redAccent.main",
             }}
-          ><DownArrow sx={{
-            color:"black"
-          }}/></Avatar>
+          >
+            <DownArrow
+              sx={{
+                color: "black",
+              }}
+            />
+          </Avatar>
           <Box display={"flex"} width="30%" flexDirection={"column"} pl={2}>
             <Typography variant="h7" color="grey.main">
               Expenses

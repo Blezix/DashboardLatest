@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Tabs, Tab, Typography } from "@mui/material";
 import CustomIcon from "./CustomIcon";
-import SimCardIcon from '@mui/icons-material/SimCard';
+import SimCardIcon from "@mui/icons-material/SimCard";
 const DashboardTabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -10,7 +10,7 @@ const DashboardTabs = () => {
   };
 
   return (
-    <Box sx={{ width: "90%", minWidth:"500px", pl: "5%" }}>
+    <Box sx={{ width: "90%", pl: "5%" }}>
       <Box padding={2} bgcolor={"grey.light"}>
         <Box
           sx={{
@@ -46,18 +46,18 @@ const DashboardTabs = () => {
                 <Box
                   sx={{
                     width: {
-                      xs: "200px", // small screens
+                      xs: "100%", // small screens
                       sm: "200px", // medium screens
                       md: "250px", // large screens
                       lg: "300px", // extra large screens
-                      xl: "350px"
+                      xl: "370px",
                     },
                     height: {
-                      xs: "120px", // small screens
-                      sm: "150px", // medium screens
+                      xs: "190px", // small screens
+                      sm: "190px", // medium screens
                       md: "150px", // large screens
                       lg: "170px", // extra large screens
-                      xl: "180px", // extra large screens
+                      xl: "200px", // extra large screens
                     },
                     borderRadius: "20px",
                     bgcolor: "primary.main",
@@ -65,7 +65,6 @@ const DashboardTabs = () => {
                     flexDirection: "column",
                   }}
                 >
-                 
                   <Box
                     sx={{
                       display: "flex",

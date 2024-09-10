@@ -1,7 +1,6 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 const muiTheme = createTheme({
-  
   palette: {
     primary: {
       main: "#0d1f2b",
@@ -23,8 +22,8 @@ const muiTheme = createTheme({
     greenAccent: {
       main: "#edfaf0",
     },
-    redAccent:{
-      main:"#fcedeb"
+    redAccent: {
+      main: "#fcedeb",
     },
     grey: {
       light: "#f7f7f7",
@@ -42,7 +41,7 @@ const muiTheme = createTheme({
       sm: 600,
       md: 960,
       lg: 1280,
-      xl: 1920,
+      xl: 1700,
     },
   },
   typography: {

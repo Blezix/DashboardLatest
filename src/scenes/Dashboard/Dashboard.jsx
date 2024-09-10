@@ -12,12 +12,7 @@ export default function Dashboard() {
   };
 
   return (
-    <Box
-      width="100%"
-      display="flex"
-      justifyContent="center"
-      sx={{ padding: 2 }}
-    >
+    <Box width="100%" display="flex" justifyContent="center" pt={2}>
       <Box width="100%">
         <Grid container spacing={2}>
           <Grid item xs={12} md={8}>
@@ -25,7 +20,7 @@ export default function Dashboard() {
               display="flex"
               justifyContent="space-between"
               alignItems="center"
-              sx={{ padding: 2, pl: "5%",paddingTop:"0" }}
+              sx={{ pl: "5%", paddingTop: "0" }}
             >
               <Typography variant="h4">Dashboard</Typography>
               <Button variant="contained" color="primary">
@@ -40,8 +35,16 @@ export default function Dashboard() {
           <Grid item xs={12} md={4} pr={2}>
             <UserDashboard />
           </Grid>
-          <Grid sx={{ bgcolor: "grey.main", height:"20%" }} item xs={12} md={8}>
-            <TransactionsTable></TransactionsTable>
+          <Grid item xs={12} md={8}>
+            <Box
+              sx={{ display: "flex", height: "300", flexDirection: "column" }}
+              pl={"5%"}
+            >
+              <Typography mb={2} variant="h5">
+                Last Transactions
+              </Typography>
+              <TransactionsTable></TransactionsTable>
+            </Box>
           </Grid>
           <Grid sx={{ bgcolor: "grey.light" }} item xs={12} md={4}></Grid>
         </Grid>
