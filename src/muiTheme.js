@@ -20,7 +20,10 @@ const muiTheme = createTheme({
       main: "#ddeff4",
     },
     greenAccent: {
-      main: "#eaf4dd",
+      main: "#edfaf0",
+    },
+    redAccent:{
+      main:"#fcedeb"
     },
     grey: {
       light: "#f7f7f7",

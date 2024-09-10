@@ -3,6 +3,7 @@ import { Box, Typography, Button, Grid } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import DashboardTabs from "../../components/DashboardTabs";
 import UserDashboard from "../../components/UserDashboard";
+import TransactionsTable from "../../components/TransactionsTable";
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -24,7 +25,7 @@ export default function Dashboard() {
               display="flex"
               justifyContent="space-between"
               alignItems="center"
-              sx={{ padding: 2, pl: "5%" }}
+              sx={{ padding: 2, pl: "5%",paddingTop:"0" }}
             >
               <Typography variant="h4">Dashboard</Typography>
               <Button variant="contained" color="primary">
@@ -39,7 +40,9 @@ export default function Dashboard() {
           <Grid item xs={12} md={4} pr={2}>
             <UserDashboard />
           </Grid>
-          <Grid sx={{ bgcolor: "grey.main" }} item xs={12} md={8}></Grid>
+          <Grid sx={{ bgcolor: "grey.main", height:"20%" }} item xs={12} md={8}>
+            <TransactionsTable></TransactionsTable>
+          </Grid>
           <Grid sx={{ bgcolor: "grey.light" }} item xs={12} md={4}></Grid>
         </Grid>
       </Box>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Avatar, Typography } from "@mui/material";
-
-const UserDashboard = () => {
+import UpArrow from '@mui/icons-material/CallMade';
+import DownArrow from '@mui/icons-material/CallReceived';const UserDashboard = () => {
   return (
     <Box
       width={"100%"}
@@ -10,8 +10,8 @@ const UserDashboard = () => {
       height={"100%"}
     >
       <Box
-        height={"45%"}
-        display={"flex"}
+        height={"40%"}
+display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
       >
@@ -37,6 +37,7 @@ const UserDashboard = () => {
           width={"90%"}
           height={"45%"}
           sx={{ border: "1px solid lightgrey" }}
+          borderRadius={"10px"}
           p={1}
           display={"flex"}
           alignItems={"center"}
@@ -45,8 +46,11 @@ const UserDashboard = () => {
             variant="circular"
             src=""
             alt=""
-            sx={{ width: "45px", height: "45px", margin: "0 5% 0 5%" }}
-          />
+            
+            sx={{ width: "45px", height: "45px", margin: "0 5% 0 5%",bgcolor:"greenAccent.main" }}
+          ><UpArrow sx={{
+            color:"black"
+          }}/></Avatar>
           <Box display={"flex"} width="30%" flexDirection={"column"} pl={2}>
             <Typography variant="h7" color="grey.main">
               Income
@@ -58,16 +62,22 @@ const UserDashboard = () => {
           width={"90%"}
           height={"45%"}
           sx={{ border: "1px solid lightgrey" }}
+          borderRadius={"10px"}
           p={1}
           display={"flex"}
           alignItems={"center"}
         >
-          <Avatar
+            <Avatar
             variant="circular"
+           
             src=""
             alt=""
-            sx={{ width: "45px", height: "45px", margin: "0 5% 0 5%" }}
-          />
+            p={1}
+            sx={{ width: "45px", height: "45px", margin: "0 5% 0 5%",              bgcolor:"redAccent.main"
+            }}
+          ><DownArrow sx={{
+            color:"black"
+          }}/></Avatar>
           <Box display={"flex"} width="30%" flexDirection={"column"} pl={2}>
             <Typography variant="h7" color="grey.main">
               Expenses

@@ -47,7 +47,7 @@ const DashboardTabs = () => {
                   sx={{
                     width: {
                       xs: "200px", // small screens
-                      sm: "250px", // medium screens
+                      sm: "200px", // medium screens
                       md: "250px", // large screens
                       lg: "300px", // extra large screens
                       xl: "350px"
@@ -56,8 +56,8 @@ const DashboardTabs = () => {
                       xs: "120px", // small screens
                       sm: "150px", // medium screens
                       md: "150px", // large screens
-                      lg: "180px", // extra large screens
-                      xl: "200px", // extra large screens
+                      lg: "170px", // extra large screens
+                      xl: "180px", // extra large screens
                     },
                     borderRadius: "20px",
                     bgcolor: "primary.main",
