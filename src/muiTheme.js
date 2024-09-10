@@ -1,6 +1,7 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 const muiTheme = createTheme({
+  
   palette: {
     primary: {
       main: "#0d1f2b",
@@ -33,6 +34,15 @@ const muiTheme = createTheme({
       700: "#616161",
       800: "#424242",
       900: "#212121",
+    },
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
     },
   },
   typography: {
