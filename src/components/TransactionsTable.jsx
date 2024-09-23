@@ -1,41 +1,103 @@
-import React from "react";
-import { Box } from "@mui/material";
+import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { Height } from "@mui/icons-material";
+import { Box, Chip } from "@mui/material";
 
+// Sample data
 const rows = [
-  { id: 1, col1: "Hello", col2: "World" },
-  { id: 2, col1: "DataGridPro", col2: "is Awesome" },
-  { id: 3, col1: "MUI", col2: "is Amazing" },
-  { id: 4, col1: "MUI", col2: "is Amazing" },
-  { id: 5, col1: "MUI", col2: "is Amazing" },
-  { id: 6, col1: "MUI", col2: "is Amazing" },
-  { id: 7, col1: "MUI", col2: "is Amazing" },
+    { id: 1, Name: "Rent an apartment", Date: "18-08-2021", Amount: "-1200", Status: "Paid" },
+    { id: 2, Name: "Hotel Hilton", Date: "16-08-2021", Amount: "-1500", Status: "Declined" },
+    { id: 3, Name: "Booking", Date: "11-08-2021", Amount: "-1034", Status: "Paid" },
+    { id: 4, Name: "Coffee point", Date: "09-08-2021", Amount: "-3.48", Status: "In progress" },
+    { id: 5, Name: "Rainbow Room", Date: "07-08-2021", Amount: "-120.50", Status: "Paid" },
 ];
 
+// Table columns definition
 const columns = [
-  { field: "col1", headerName: "Column 1", width: 150 },
-  { field: "col2", headerName: "Column 2", width: 150 },
+    { field: "Name", headerName: "Name Of Transaction", width: 200 },
+    {
+        field: "Date",
+        headerName: "Date",
+        width: 200,
+        cellClassName: 'date-column-cell',
+    },
+    { field: "Amount", headerName: "Amount", width: 150 },
+    {
+        field: "Status",
+        headerName: "Status",
+        width: 150,
+        renderCell: (params) => {
+            let color = "default";
+            switch (params.value) {
+                case "Paid":
+                    color = "success";
+                    break;
+                case "Declined":
+                    color = "error";
+                    break;
+                case "In progress":
+                    color = "info";
+                    break;
+                default:
+                    color = "default";
+            }
+            return <Chip label={params.value} color={color} variant="outlined" />;
+        },
+    },
 ];
 
+// React component
 export default function TransactionsTable() {
-  return (
-    <Box sx={{  height: {
-          sm: '250px', // medium screens
-          md: '250px',
-          lg: "250px", // large screens
-          xl: '400px', // extra large screens
-        }, width: "90%" }}>
-      <DataGrid
-        hideFooter
-        rows={rows}
-        columns={columns}
-        sx={{
-          height: "100%",
-          bgcolor: "none",
-        }}
-        p={2}
-      />
-    </Box>
-  );
+    return (
+        <Box
+            sx={{
+                height: {
+                    sm: "300px",
+                    md: "220px",
+                    lg: "220px",
+                    xl: "600px",
+                },
+                width: "95%",
+                backgroundColor: "white", // Light background to match the design
+                padding: "10px",
+                borderRadius: "8px",
+                border: "1px solid lightgrey",
+            }}
+        >
+            <DataGrid
+                hideFooter
+                rows={rows}
+                columns={columns}
+                sx={{
+                    border: "none",
+                    "& .MuiDataGrid-root": {
+                        backgroundColor: "transparent", // Set the root background to transparent
+                    },
+                    "& .MuiDataGrid-columnHeaders": {
+                        backgroundColor: "white", // Set the column headers background to white
+                        color: "black", // Keep text black for contrast
+                        borderBottom: "1px solid lightgrey", // Optional: to visually separate header from rows
+                    },
+                    "& .MuiDataGrid-columnHeaderTitle": {
+                        fontWeight: "bold", // Optional: Make headers bold
+                    },
+                    "& .MuiDataGrid-cell": {
+                        backgroundColor: "white", // Set the cell background to white
+                        color: "black",
+                    },
+                    "& .MuiDataGrid-row": {
+                        backgroundColor: "transparent", // Set the row background to transparent
+                    },
+                    "& .MuiDataGrid-footerContainer": {
+                        backgroundColor: "transparent", // Set the footer background to transparent
+                    },
+                    "& .date-column-cell": {
+                        color: "grey",
+                    },
+                    "* .MuiDataGrid-columnHeader, .MuiDataGrid-filler": {
+                        backgroundColor: "white "
+                    },
+                   }}
+            />
+        </Box>
+    );
 }

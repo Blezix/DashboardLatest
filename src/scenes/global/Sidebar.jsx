@@ -45,7 +45,7 @@ const Sidebar = () => {
         <Typography
           variant="h5"
           sx={{
-            color: "text.secondary",
+            color: "white",
             padding: { xs: 2, sm: 2 },
           }}
         >

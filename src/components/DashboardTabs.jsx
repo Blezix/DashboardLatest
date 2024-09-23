@@ -56,11 +56,11 @@ const DashboardTabs = () => {
                       xs: "190px", // small screens
                       sm: "190px", // medium screens
                       md: "150px", // large screens
-                      lg: "170px", // extra large screens
+                      lg: "160px", // extra large screens
                       xl: "200px", // extra large screens
                     },
                     borderRadius: "20px",
-                    bgcolor: "primary.main",
+                    bgcolor: "#11222c",
                     display: "flex",
                     flexDirection: "column",
                   }}

@@ -13,7 +13,7 @@ const muiTheme = createTheme({
     },
     text: {
       primary: "#242424",
-      secondary: "#fdfdfd",
+      secondary: "#6c6666",
       notActive: "#848484",
     },
     blueAccent: {
@@ -89,7 +89,7 @@ const muiTheme = createTheme({
           },
         },
       },
-    },
+    }
   },
 });
 

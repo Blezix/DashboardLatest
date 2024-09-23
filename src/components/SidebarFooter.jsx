@@ -22,4 +22,3 @@ const SidebarFooter = ({ theme }) => (
   </Box>
 );
 
-export default SidebarFooter;
