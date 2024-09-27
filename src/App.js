@@ -8,7 +8,15 @@ function App() {
     return (
         <Box className="App" display="flex">
             <Sidebar />
-            <Box className="content" width="100%" display="flex">
+            <Box className="content"  display="flex" sx={{
+                height:"90vh",
+                width:"75%",
+                overflowX: "auto",
+                background:"white",
+                mt:"auto",
+                mb:"auto",
+                borderRadius:"15px"
+            }}>
                 <Dashboard2 />
             </Box>
         </Box>

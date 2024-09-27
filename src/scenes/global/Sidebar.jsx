@@ -54,13 +54,13 @@ const Sidebar = () => {
       </Box>
       <Box
         sx={{
-          bgcolor: "primary.main",
-          height: "85%",
-          borderRadius: { xs: "0", sm: "0 70px 0px 0" },
+          bgcolor: "white",
+          height: "80%", width:"70%",
+          borderRadius: "20px",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          alignItems: "center",
+          alignItems: "center", m:"auto"
         }}
       >
         <List
