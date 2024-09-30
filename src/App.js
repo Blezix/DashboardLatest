@@ -10,8 +10,9 @@ function App() {
             <Sidebar />
             <Box className="content"  display="flex" sx={{
                 height:"90vh",
-                width:"75%",
-                overflowX: "auto",
+                width:"80%",
+                overflowX: "hidden",
+                overflowY: "scroll",
                 background:"white",
                 mt:"auto",
                 mb:"auto",
