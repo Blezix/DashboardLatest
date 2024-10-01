@@ -54,7 +54,7 @@ export default function TransactionsTable() {
                     sm: "300px",
                     md: "220px",
                     lg: "220px",
-                    xl: "600px",
+                    xl: "300px",
                 },
                 width: "95%",
                 backgroundColor: "white", // Light background to match the design

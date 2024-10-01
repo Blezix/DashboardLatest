@@ -4,7 +4,8 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #17293e;
+  background-color: #0b1f36;
+  background: linear-gradient(to right bottom,#002957, #8876e5,#012958);
 }
 
 code {

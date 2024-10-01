@@ -54,8 +54,10 @@ export default function Dashboard2() {
                             width:"80%",
                             height:"120px",
                             borderRadius:"20px",
-                            backgroundColor: '#81a8e2',
-                            padding:3
+                            background:"linear-gradient(to right bottom,#666 ,#484848,#4d4d4d)",
+                            padding:3,
+                            border:"4px solid #3e3d3d",
+                            color:"white"
                         }}>
                         <Typography variant="h6">Card</Typography>
                         <Typography variant="h4">$34,000.00</Typography>
