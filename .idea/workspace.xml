@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="041a7263-df53-4352-acdc-a7e6f7e6c769" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Cards/BalanceSummary.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cards/CardInfo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cards/CustomerGrowth.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cards/EarningsCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cards/SavingCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cards/SpendingCard.jsx" afterDir="false" />
+    <list default="true" id="041a7263-df53-4352-acdc-a7e6f7e6c769" name="Changes" comment="update Sidebar to hide text on md breakpoint">
+      <change afterPath="$PROJECT_DIR$/.idea/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PieChart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomerGrowthChart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TransactionsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TransactionsTable.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/muiTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/muiTheme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Dashboard/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Dashboard/Dashboard2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Dashboard/Dashboard2.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/global/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/global/Sidebar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +18,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Blezix&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Blezix/DashboardLatest.git&quot;,
+    &quot;accountId&quot;: &quot;53b3dcb2-6967-47a5-acc1-fb7e9ab694b0&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -46,7 +47,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jacob/Documents/FullReactDashboard&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HARDPC/Documents/Dashboard23.08/app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -104,7 +105,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
       </set>
     </attachedChunks>
   </component>
@@ -130,14 +131,21 @@
       <workItem from="1727331074016" duration="94000" />
       <workItem from="1727331311467" duration="2434000" />
       <workItem from="1727439029896" duration="611000" />
-      <workItem from="1727441000185" duration="1725000" />
-      <workItem from="1727686134387" duration="1216000" />
-      <workItem from="1727858160067" duration="2018000" />
-      <workItem from="1727868266615" duration="3176000" />
-      <workItem from="1727935397334" duration="3800000" />
-      <workItem from="1728289854063" duration="39000" />
-      <workItem from="1728376652234" duration="717000" />
+      <workItem from="1727441000185" duration="1439000" />
+      <workItem from="1727722519634" duration="623000" />
+      <workItem from="1727797870311" duration="9364000" />
+      <workItem from="1728070804200" duration="53000" />
+      <workItem from="1728409160842" duration="298000" />
     </task>
+    <task id="LOCAL-00001" summary="update Sidebar to hide text on md breakpoint">
+      <option name="closed" value="true" />
+      <created>1727809264587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727809264587</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +155,10 @@
     <option featureType="dependencySupport" implementationName="javascript:npm:react" />
     <option featureType="dependencySupport" implementationName="executable:docker" />
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update Sidebar to hide text on md breakpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Sidebar to hide text on md breakpoint" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
