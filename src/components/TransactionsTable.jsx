@@ -1,6 +1,6 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { Box, Chip } from "@mui/material";
+import {Box, Chip, Paper, Typography} from "@mui/material";
 
 // Sample data
 const rows = [
@@ -48,12 +48,15 @@ const columns = [
 // React component
 export default function TransactionsTable() {
     return (
+        <Paper sx={{ padding: 2 }}>
+            <Typography variant="h6" sx={{mb:2}}>Transactions</Typography>
+
         <Box
             sx={{
                 height: {
-                    sm: "300px",
+                    sm: "200px",
                     md: "220px",
-                    lg: "220px",
+                    lg: "250px",
                     xl: "300px",
                 },
                 width: "95%",
@@ -63,6 +66,7 @@ export default function TransactionsTable() {
                 border: "1px solid lightgrey",
             }}
         >
+
             <DataGrid
                 hideFooter
                 rows={rows}
@@ -99,5 +103,6 @@ export default function TransactionsTable() {
                    }}
             />
         </Box>
+        </Paper>
     );
 }

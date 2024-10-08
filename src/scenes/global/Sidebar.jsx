@@ -14,6 +14,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonIcon from "@mui/icons-material/Person";
 import SettingsIcon from "@mui/icons-material/Settings";
+import Slide from "@mui/material/Slide";
 
 const Sidebar = () => {
     const [activeSite, setActiveSite] = useState(null);
@@ -32,6 +33,13 @@ const Sidebar = () => {
     };
 
     return (
+        <Slide
+            direction="right"
+            in={true}
+            timeout={500}
+            mountOnEnter
+            unmountOnExit>
+
         <Box
             sx={{
                 width: { xs: "0", sm: "18%" },
@@ -64,7 +72,7 @@ const Sidebar = () => {
             </Box>
             <Box
                 sx={{
-                    bgcolor: "white",
+                    bgcolor: "background.main",
                     height: "80%", width:"70%",
                     borderRadius: "20px",
                     display: "flex",
@@ -148,6 +156,7 @@ const Sidebar = () => {
                 </Box>
             </Box>
         </Box>
+        </Slide>
     );
 };
 

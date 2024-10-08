@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Typography, Button, Grid } from "@mui/material";
 import DashboardTabs from "../../components/DashboardTabs";
 import UserDashboard from "../../components/UserDashboard";
-import PieChartComponent from "../../components/PieChart";
+import PieChartComponent from "../../components/CustomerGrowthChart";
 import TransactionsTable from "../../components/TransactionsTable";
 
 export default function Dashboard() {

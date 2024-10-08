@@ -9,7 +9,7 @@ const muiTheme = createTheme({
       main: "#ffffff",
     },
     background: {
-      default: "#f5f5f5",
+      main: "#ffffffd4",
     },
     text: {
       primary: "#242424",
