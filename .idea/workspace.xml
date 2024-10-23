@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="041a7263-df53-4352-acdc-a7e6f7e6c769" name="Changes" comment="update Sidebar to hide text on md breakpoint">
-      <change afterPath="$PROJECT_DIR$/.idea/app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/BalanceSummary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/BalanceSummary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SidebarItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SidebarItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/global/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/global/Sidebar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +31,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Blezix/DashboardLatest.git&quot;,
-    &quot;accountId&quot;: &quot;53b3dcb2-6967-47a5-acc1-fb7e9ab694b0&quot;
+    &quot;accountId&quot;: &quot;d31c8090-ae18-45e1-8ee5-6855aae59199&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -47,7 +51,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HARDPC/Documents/Dashboard23.08/app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jacob/Documents/GitHub/loginpage&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -105,7 +109,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
       </set>
     </attachedChunks>
   </component>
@@ -136,6 +140,10 @@
       <workItem from="1727797870311" duration="9364000" />
       <workItem from="1728070804200" duration="53000" />
       <workItem from="1728409160842" duration="298000" />
+      <workItem from="1728474242221" duration="48000" />
+      <workItem from="1728644319375" duration="784000" />
+      <workItem from="1729077679925" duration="2107000" />
+      <workItem from="1729682512567" duration="2227000" />
     </task>
     <task id="LOCAL-00001" summary="update Sidebar to hide text on md breakpoint">
       <option name="closed" value="true" />

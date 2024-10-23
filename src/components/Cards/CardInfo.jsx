@@ -3,13 +3,12 @@ import { Paper, Typography, Box } from '@mui/material';
 
 export default function CardInfo() {
     return (
-        <Paper sx={{ padding: 2 }}>
+        <Box sx={{ Display:"flex",flexDirection:"column",justifyContent:"space-between",height:"100%" }}>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'start',
                 justifyContent: "space-around",
-                margin: "auto",
                 marginBottom: "40px",
                 width: "80%",
                 height: "120px",
@@ -28,6 +27,6 @@ export default function CardInfo() {
                 <Box>Request</Box>
                 <Box>Add</Box>
             </Box>
-        </Paper>
+        </Box>
     );
 }

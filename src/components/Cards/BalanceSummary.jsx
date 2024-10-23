@@ -1,5 +1,6 @@
 import React from 'react';
 import { Paper, Typography, Box } from '@mui/material';
+
 import { LineChart } from '@mui/x-charts';
 
 const data = [
