@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="041a7263-df53-4352-acdc-a7e6f7e6c769" name="Changes" comment="update Sidebar to hide text on md breakpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/BalanceSummary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/BalanceSummary.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SidebarItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SidebarItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/global/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/global/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TransactionsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TransactionsTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Dashboard/Dashboard2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Dashboard/Dashboard2.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +139,12 @@
       <workItem from="1728474242221" duration="48000" />
       <workItem from="1728644319375" duration="784000" />
       <workItem from="1729077679925" duration="2107000" />
-      <workItem from="1729682512567" duration="2227000" />
+      <workItem from="1729682512567" duration="2821000" />
+      <workItem from="1729752485841" duration="902000" />
+      <workItem from="1730288666138" duration="712000" />
+      <workItem from="1730292534744" duration="195000" />
+      <workItem from="1730722913920" duration="1818000" />
+      <workItem from="1730739731119" duration="617000" />
     </task>
     <task id="LOCAL-00001" summary="update Sidebar to hide text on md breakpoint">
       <option name="closed" value="true" />

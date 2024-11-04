@@ -9,8 +9,11 @@ import TransactionHistory from '../../components/TransactionsTable';
 import CustomerGrowth from '../../components/Cards/CustomerGrowth';
 
 export default function Dashboard2() {
+
+
+
     return (
-        <Box sx={{ flexGrow: 1, pl: 5, pr: 5, pt: 8 }}>
+        <Box sx={{ flexGrow: 1, p:5, overflow:"auto" }}>
             <Grid container spacing={3}>
                 <Grid item xs={12} md={4}>
                     <EarningsCard />

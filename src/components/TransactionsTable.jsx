@@ -1,6 +1,6 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import {Box, Chip, Paper, Typography} from "@mui/material";
+import { Box, Chip, Paper, Typography } from "@mui/material";
 
 // Sample data
 const rows = [
@@ -49,60 +49,61 @@ const columns = [
 export default function TransactionsTable() {
     return (
         <Paper sx={{ padding: 2 }}>
-            <Typography variant="h6" sx={{mb:2}}>Transactions</Typography>
+            <Typography variant="h6" sx={{ mb: 2 }}>Transactions</Typography>
 
-        <Box
-            sx={{
-                height: {
-                    sm: "200px",
-                    md: "220px",
-                    lg: "250px",
-                    xl: "300px",
-                },
-                width: "95%",
-                backgroundColor: "white", // Light background to match the design
-                padding: "10px",
-                borderRadius: "8px",
-                border: "1px solid lightgrey",
-            }}
-        >
-
-            <DataGrid
-                hideFooter
-                rows={rows}
-                columns={columns}
+            <Box
                 sx={{
-                    border: "none",
-                    "& .MuiDataGrid-root": {
-                        backgroundColor: "transparent", // Set the root background to transparent
+                    maxHeight: {
+                        sm: "200px",
+                        md: "220px",
+                        lg: "250px",
+                        xl: "300px",
                     },
-                    "& .MuiDataGrid-columnHeaders": {
-                        backgroundColor: "white", // Set the column headers background to white
-                        color: "black", // Keep text black for contrast
-                        borderBottom: "1px solid lightgrey", // Optional: to visually separate header from rows
-                    },
-                    "& .MuiDataGrid-columnHeaderTitle": {
-                        fontWeight: "bold", // Optional: Make headers bold
-                    },
-                    "& .MuiDataGrid-cell": {
-                        backgroundColor: "white", // Set the cell background to white
-                        color: "black",
-                    },
-                    "& .MuiDataGrid-row": {
-                        backgroundColor: "transparent", // Set the row background to transparent
-                    },
-                    "& .MuiDataGrid-footerContainer": {
-                        backgroundColor: "transparent", // Set the footer background to transparent
-                    },
-                    "& .date-column-cell": {
-                        color: "grey",
-                    },
-                    "* .MuiDataGrid-columnHeader, .MuiDataGrid-filler": {
-                        backgroundColor: "white "
-                    },
-                   }}
-            />
-        </Box>
+                    overflow:"auto",
+                    width: "95%",
+                    backgroundColor: "white", // Light background to match the design
+                    padding: "10px",
+                    borderRadius: "8px",
+                    border: "1px solid lightgrey",
+                }}
+            >
+                <DataGrid
+                    hideFooter
+                    rows={rows}
+                    columns={columns}
+                    disableExtendRowFullWidth
+                    sx={{
+                        border: "none",
+                        "& .MuiDataGrid-root": {
+                            backgroundColor: "transparent", // Set the root background to transparent
+                        },
+                        "& .MuiDataGrid-columnHeaders": {
+                            backgroundColor: "white", // Set the column headers background to white
+                            color: "black", // Keep text black for contrast
+                            borderBottom: "1px solid lightgrey", // Optional: to visually separate header from rows
+                        },
+                        "& .MuiDataGrid-columnHeaderTitle": {
+                            fontWeight: "bold", // Optional: Make headers bold
+                        },
+                        "& .MuiDataGrid-cell": {
+                            backgroundColor: "white", // Set the cell background to white
+                            color: "black",
+                        },
+                        "& .MuiDataGrid-filler": {
+                          display: "none", // Hide the filler
+                        },
+                        "& .MuiDataGrid-row": {
+                            backgroundColor: "transparent", // Set the row background to transparent
+                        },
+                        "& .MuiDataGrid-footerContainer": {
+                            backgroundColor: "transparent", // Set the footer background to transparent
+                        },
+                        "& .date-column-cell": {
+                            color: "grey",
+                        },
+                    }}
+                />
+            </Box>
         </Paper>
     );
 }
