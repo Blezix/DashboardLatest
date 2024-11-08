@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { PieChart, PieArcLabel } from "@mui/x-charts";
+import Chart from "react-apexcharts";
 
 const data = [
     { id: 0, label: 'series A', value: 10 },
@@ -8,23 +8,36 @@ const data = [
     { id: 2, label: 'series C', value: 20 },
 ];
 
+const chartOptions = {
+    chart: {
+        type: 'donut',
+    },
+    labels: data.map(item => item.label),
+    legend: {
+        show: false,
+    },
+    plotOptions: {
+        pie: {
+            donut: {
+                size: '50%',
+            },
+                expandOnClick: false,
+        },
+    },
+};
+
+const chartSeries = data.map(item => item.value);
+
 export default function CustomerGrowthChart() {
     return (
-        <Box>
+        <Box width={"100%"} height={"100%"} display={"flex"} justifyContent={"center"}>
             {data && data.length ? (
-                <PieChart
-                    sx={{display: "flex",flexDirection:"column", justifyContent: "center"
-
-                }}
-                    series={[
-                        {
-                            data,
-                            label: ({ dataEntry }) => dataEntry.label,
-                            labelComponent: (props) => <PieArcLabel allowReorder={"yes"} {...props} />,
-                        },
-                    ]}
-                    width={250}
-                    height={250}
+                <Chart
+                    options={chartOptions}
+                    series={chartSeries}
+                    type="donut"
+                    width="100%"
+                    height="100%"
                 />
             ) : (
                 <Typography variant="body1">No data available</Typography>

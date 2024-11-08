@@ -10,10 +10,11 @@ import {
     useTheme,
     useMediaQuery,
 } from "@mui/material";
-import HomeIcon from "@mui/icons-material/Home";
 import DashboardIcon from "@mui/icons-material/Dashboard";
+import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
 import PersonIcon from "@mui/icons-material/Person";
 import SettingsIcon from "@mui/icons-material/Settings";
+import ArticleIcon from '@mui/icons-material/Article';
 import Slide from "@mui/material/Slide";
 import { useNavigate } from "react-router-dom";
 
@@ -24,10 +25,11 @@ const Sidebar = () => {
     const navigate = useNavigate();
 
     const sites = [
-        { name: "Home", icon: <HomeIcon />, path: "/home" },
         { name: "Dashboard", icon: <DashboardIcon />, path: "/" },
-        { name: "Profile", icon: <PersonIcon />, path: "/profile" },
-        { name: "Settings", icon: <SettingsIcon />, path: "/settings" },
+        { name: "Profile", icon: <PersonIcon />, path: "/profile" }, //random info
+        { name: "Settings", icon: <SettingsIcon />, path: "/settings" }, //translate i theme change
+        { name: "DnD", icon: <LibraryAddIcon />, path: "/dragndrop" },
+        { name: "Text Editor", icon: <ArticleIcon />, path: "/codeeditor" }, //React quill
     ];
 
     const handleSiteClick = (site) => {

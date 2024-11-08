@@ -3,7 +3,7 @@ import { Paper, Typography, Box } from '@mui/material';
 
 export default function CardInfo() {
     return (
-        <Box sx={{ Display:"flex",flexDirection:"column",justifyContent:"space-between",height:"100%" }}>
+        <Box sx={{ display:"flex",flexDirection:"column",alignItems:"center",height:"100%" }}>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -23,9 +23,7 @@ export default function CardInfo() {
                 <Typography>Michael Smith</Typography>
             </Box>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', marginTop: 2 }}>
-                <Box>Send</Box>
-                <Box>Request</Box>
-                <Box>Add</Box>
+
             </Box>
         </Box>
     );
