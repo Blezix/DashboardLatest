@@ -26,7 +26,6 @@ const Sidebar = () => {
 
     const sites = [
         { name: "Dashboard", icon: <DashboardIcon />, path: "/" },
-        { name: "Profile", icon: <PersonIcon />, path: "/profile" }, //random info
         { name: "Settings", icon: <SettingsIcon />, path: "/settings" }, //translate i theme change
         { name: "DnD", icon: <LibraryAddIcon />, path: "/dragndrop" },
         { name: "Text Editor", icon: <ArticleIcon />, path: "/codeeditor" }, //React quill

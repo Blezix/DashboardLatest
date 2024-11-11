@@ -5,7 +5,7 @@ import Dashboard from "./scenes/Dashboard/Dashboard";
 import Profile from "./scenes/Profile/Profile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Slide from '@mui/material/Slide';
-import CustomerGrowth from "./components/Cards/CustomerGrowth";
+import Settings from "./scenes/Settings/Settings";
 function App() {
     const isMobile = useMediaQuery(theme => theme.breakpoints.down("sm"));
     const [isMobileDevice, setIsMobileDevice] = useState(false);
@@ -29,9 +29,7 @@ function App() {
                     }}>
                         <Routes>
                             <Route path="/" element={<Dashboard />} />
-                            <Route path="/ApiForm" />
-                            <Route path="/chart" element={<CustomerGrowth />} />
-                            <Route path="/profile" element={<Profile />} />
+                            <Route path="/settings" element={<Settings />} />
 
                         </Routes>
                     </Box>
