@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Box, useMediaQuery } from "@mui/material";
 import Sidebar from "./scenes/Global/Sidebar";
 import Dashboard from "./scenes/Dashboard/Dashboard";
-import Profile from "./scenes/Profile/Profile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Slide from '@mui/material/Slide';
 import Settings from "./scenes/Settings/Settings";
+import { ThemeModeProvider } from './ThemeModeContext';
+
 function App() {
     const isMobile = useMediaQuery(theme => theme.breakpoints.down("sm"));
     const [isMobileDevice, setIsMobileDevice] = useState(false);
@@ -30,7 +31,6 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Dashboard />} />
                             <Route path="/settings" element={<Settings />} />
-
                         </Routes>
                     </Box>
                 </Slide>
@@ -39,4 +39,10 @@ function App() {
     );
 }
 
-export default App;
+export default function Root() {
+    return (
+        <ThemeModeProvider>
+            <App />
+        </ThemeModeProvider>
+    );
+}
