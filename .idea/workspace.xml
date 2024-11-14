@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="041a7263-df53-4352-acdc-a7e6f7e6c769" name="Changes" comment="update Sidebar to hide text on md breakpoint">
+      <change afterPath="$PROJECT_DIR$/src/scenes/Global/SidebarFooter.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenes/Global/SidebarHeader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenes/Global/SidebarMenu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenes/Settings/AppearanceSettings.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenes/Settings/LanguageSettings.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenes/Settings/SaveCancelButtons.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/BalanceSummary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/BalanceSummary.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/EarningsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/EarningsCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/SavingCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/SavingCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/SpendingCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/SpendingCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/muiTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/muiTheme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/Tabs/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Settings/Tabs/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ThemeModeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThemeModeContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SidebarFooter.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SidebarItem.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SiteList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserDashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Settings/Settings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/Tabs/Prefrence/Prefrence.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/Tabs/Profile/Profile.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/global/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Global/Sidebar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +36,12 @@
     &quot;assignee&quot;: &quot;Blezix&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Blezix/DashboardLatest.git&quot;,
-    &quot;accountId&quot;: &quot;d31c8090-ae18-45e1-8ee5-6855aae59199&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Blezix/DashboardLatest.git",
+    "accountId": "53b3dcb2-6967-47a5-acc1-fb7e9ab694b0"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -167,6 +175,7 @@
       <workItem from="1731526563170" duration="78000" />
       <workItem from="1731526755184" duration="25000" />
       <workItem from="1731568246797" duration="3508000" />
+      <workItem from="1731614198938" duration="5639000" />
     </task>
     <task id="LOCAL-00001" summary="update Sidebar to hide text on md breakpoint">
       <option name="closed" value="true" />
@@ -202,7 +211,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/muiTheme.js</url>
           <line>12</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

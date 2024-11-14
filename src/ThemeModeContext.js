@@ -9,9 +9,8 @@ export const ThemeModeProvider = ({ children }) => {
 
     const theme = useMemo(() => (mode === 'light' ? lightTheme : darkTheme), [mode]);
 
-    const toggleTheme = () => {
-        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
-    };
+    const toggleTheme = (newMode) => {
+        setMode(newMode)};
 
     return (
         <ThemeModeContext.Provider value={{ mode, toggleTheme }}>

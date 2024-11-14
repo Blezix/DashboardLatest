@@ -1,46 +1,34 @@
 import React, { useState } from 'react';
-import { Box, Tabs, Tab, Typography, Button } from '@mui/material';
-import { useThemeMode } from '../../ThemeModeContext';
-import Profile from "./Tabs/Profile/Profile";
-import Prefrence from "./Tabs/Prefrence/Prefrence";
-function TabPanel(props) {
-    const { children, value, index, ...other } = props;
-
-    return (
-        <Box role="tabpanel" hidden={value !== index} id={`vertical-tabpanel-${index}`} aria-labelledby={`vertical-tab-${index}`} {...other}>
-            {value === index && (
-                <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
-                </Box>
-            )}
-        </Box>
-    );
-}
+import { Box, Tabs, Tab, Typography, Divider } from '@mui/material';
+import AppearanceSettings from './AppearanceSettings';
+import LanguageSettings from './LanguageSettings';
+import SaveCancelButtons from './SaveCancelButtons';
 
 export default function Settings() {
-    const [value, setValue] = useState(0);
+    const [language, setLanguage] = useState("English (UK)");
+    const [tabValue, setTabValue] = useState(0);
 
-
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
+    const handleTabChange = (event, newValue) => {
+        setTabValue(newValue);
     };
-    return (
-        <Box sx={{ width: '100%', height: '100%', display: 'flex' }}>
-            <Tabs sx={{ height: '100%', width: '20%' }} orientation="vertical" value={value} onChange={handleChange}>
-                <Tab label="Profile" />
-                <Tab label="Prefrences" />
-                <Tab label="Security" />
-            </Tabs>
-            <TabPanel  value={value} index={0} >
-                <Profile />
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-                <Prefrence />
-            </TabPanel>
-            <TabPanel value={value} index={2}>
-                Security Content
-            </TabPanel>
 
+    return (
+        <Box sx={{ width: '100%', padding: 3 }}>
+            <Typography variant="h5" sx={{ mb: 3 }}>Settings</Typography>
+            <Tabs value={tabValue} onChange={handleTabChange} sx={{ mb: 3 }}>
+                <Tab label="Account" />
+                <Tab label="Profile" />
+                <Tab label="Appearance" />
+            </Tabs>
+            {tabValue === 2 && (
+                <Box sx={{ mt: 3 }}>
+                    <Typography variant="h6" sx={{ m: 2 }}>Appearance</Typography>
+                    <AppearanceSettings />
+                    <Divider sx={{ my: 4 }} />
+                    <LanguageSettings language={language} setLanguage={setLanguage} />
+                    <SaveCancelButtons />
+                </Box>
+            )}
         </Box>
     );
 }
