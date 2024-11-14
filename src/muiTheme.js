@@ -9,7 +9,7 @@ const lightTheme = createTheme({
     secondary: {
       main: "#ffffff",
     },
-    background: {
+    paperBackground: {
       main: "#ffffffd4",
     },
     text: {
@@ -18,22 +18,17 @@ const lightTheme = createTheme({
       notActive: "#848484",
     },
     blueAccent: {
-      main: "#ddeff4",
+      main: "#a0cbf8",
     },
     greenAccent: {
-      main: "#edfaf0",
+      main: "#96c6a1",
     },
     redAccent: {
-      main: "#fcedeb",
+      main: "#f199a5",
     },
     grey: {
       light: "#f7f7f7",
-      400: "#bdbdbd",
-      500: "#9e9e9e",
       main: "#757575",
-      700: "#616161",
-      800: "#424242",
-      900: "#212121",
     },
   },
   breakpoints: {
@@ -90,7 +85,7 @@ const lightTheme = createTheme({
           },
         },
       },
-    }
+    },
   },
 });
 
@@ -103,8 +98,8 @@ const darkTheme = createTheme({
     secondary: {
       main: "#ffffff",
     },
-    background: {
-      main: "#121212",
+    paperBackground: {
+      main: "rgba(48,47,47,0.78)",
     },
     text: {
       primary: "#ffffff",
@@ -122,12 +117,7 @@ const darkTheme = createTheme({
     },
     grey: {
       light: "#424242",
-      400: "#bdbdbd",
-      500: "#9e9e9e",
       main: "#757575",
-      700: "#616161",
-      800: "#424242",
-      900: "#212121",
     },
   },
   breakpoints: {
@@ -143,6 +133,13 @@ const darkTheme = createTheme({
     fontFamily: "Roboto, sans-serif",
   },
   components: {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#212125eb",
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
@@ -184,7 +181,7 @@ const darkTheme = createTheme({
           },
         },
       },
-    }
+    },
   },
 });
 

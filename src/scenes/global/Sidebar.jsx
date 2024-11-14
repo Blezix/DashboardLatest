@@ -32,7 +32,7 @@ const Sidebar = () => {
                         Company
                     </Typography>
                 </Box>
-                <Box sx={{ bgcolor: 'background.main', height: '80%', width: '70%', borderRadius: '20px', pl: 1, pr: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', m: 'auto' }}>
+                <Box sx={{ bgcolor: 'paperBackground.main', height: '80%', width: '70%', borderRadius: '20px', pl: 1, pr: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', m: 'auto' }}>
                     <List sx={{ width: '100%', paddingTop: { xs: '0', sm: '30%', md: '15%' } }}>
                         {sites.map((site, index) => (
                             <ListItem button key={index} sx={{ color: activeSite === site.name ? theme.palette.text.secondary : theme.palette.text.notActive, bgcolor: activeSite === site.name ? theme.palette.grey[900] : 'transparent', '&:hover': { bgcolor: theme.palette.grey[800] } }} selected={activeSite === site.name} onClick={() => handleSiteClick(site)}>

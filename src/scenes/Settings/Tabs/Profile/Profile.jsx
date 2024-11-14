@@ -10,7 +10,7 @@ export default function Profile() {
         }}>
             <Paper sx={{
                 height:"100%",
-                backgroundColor: "#4f3eb4ad",
+                backgroundColor: "#4f3eb4ad", //color
                 p: 2,
                 display: "flex",
                 color:"white",

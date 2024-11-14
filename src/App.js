@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Box, useMediaQuery } from "@mui/material";
+import {Box, useMediaQuery, useTheme} from "@mui/material";
 import Sidebar from "./scenes/Global/Sidebar";
 import Dashboard from "./scenes/Dashboard/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -10,6 +10,8 @@ import { ThemeModeProvider } from './ThemeModeContext';
 function App() {
     const isMobile = useMediaQuery(theme => theme.breakpoints.down("sm"));
     const [isMobileDevice, setIsMobileDevice] = useState(false);
+    const theme = useTheme();
+
 
     useEffect(() => {
         setIsMobileDevice(isMobile);
@@ -23,7 +25,7 @@ function App() {
                     <Box className="content" display="flex" sx={{
                         height: isMobileDevice ? "100vh" : "90vh",
                         width: isMobileDevice ? "100%" : "80%",
-                        background: "#ffffffd4",
+                        bgcolor: theme.palette.paperBackground.main, //color
                         mt: "auto",
                         mb: "auto",
                         borderRadius: "15px"

@@ -51,7 +51,7 @@ export default function BalanceSummary() {
     return (
         <Paper sx={{ padding: 2 }}>
             <Typography variant="h6">Balance Summary</Typography>
-            <Box sx={{ height: '300px', width: '100%', backgroundColor: 'white' }}>
+            <Box sx={{ height: '300px', width: '100%', backgroundColor: 'transparent' }}>
                 {data && data.length ? (
                     <Chart
                         options={chartOptions}
