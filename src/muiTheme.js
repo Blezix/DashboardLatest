@@ -2,7 +2,7 @@ import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 const lightTheme = createTheme({
   palette: {
-    mode: 'light',
+    mode: "light",
     primary: {
       main: "#0d1f2b",
     },
@@ -61,7 +61,7 @@ const lightTheme = createTheme({
           },
         },
         containedSecondary: {
-          backgroundColor: "#fdfdfd",
+          backgroundColor: "#813535",
           color: "#242424",
           "&:hover": {
             backgroundColor: "#e0e0e0",
@@ -91,9 +91,9 @@ const lightTheme = createTheme({
 
 const darkTheme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: "dark",
     primary: {
-      main: "#0d1f2b",
+      main: "#fff ",
     },
     secondary: {
       main: "#ffffff",
@@ -150,7 +150,7 @@ const darkTheme = createTheme({
         },
         containedPrimary: {
           backgroundColor: "#242424",
-          color: "#fdfdfd",
+          color: "#fff",
           "&:hover": {
             backgroundColor: "#1e1e1e",
             opacity: 0.9,

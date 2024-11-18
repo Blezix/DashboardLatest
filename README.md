@@ -21,24 +21,24 @@ This project is a React application that includes a sidebar navigation and themi
 ## Installation
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/your-repo-name.git
-    ```
+   ```sh
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
 2. Navigate to the project directory:
-    ```sh
-    cd your-repo-name
-    ```
+   ```sh
+   cd your-repo-name
+   ```
 3. Install the dependencies:
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
 ## Usage
 
 1. Start the development server:
-    ```sh
-    npm start
-    ```
+   ```sh
+   npm start
+   ```
 2. Open your browser and navigate to `http://localhost:3000`.
 
 ## Project Structure
@@ -59,17 +59,17 @@ The project uses MUI's theming capabilities to support both light and dark modes
 
 1. Fork the repository.
 2. Create a new branch:
-    ```sh
-    git checkout -b feature/your-feature-name
-    ```
+   ```sh
+   git checkout -b feature/your-feature-name
+   ```
 3. Make your changes and commit them:
-    ```sh
-    git commit -m "Add some feature"
-    ```
+   ```sh
+   git commit -m "Add some feature"
+   ```
 4. Push to the branch:
-    ```sh
-    git push origin feature/your-feature-name
-    ```
+   ```sh
+   git push origin feature/your-feature-name
+   ```
 5. Open a pull request.
 
 ## License
