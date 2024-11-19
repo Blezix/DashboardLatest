@@ -13,7 +13,6 @@ export default function AppearanceSettings() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Simulate a loading delay
         const timer = setTimeout(() => {
             setLoading(false);
         }, 1000);
@@ -30,15 +29,18 @@ export default function AppearanceSettings() {
                     <Skeleton variant="rectangular" width={200} height={100} />
                 </Box>
             ) : (
-                <ToggleButtonGroup exclusive sx={{ mt: 1 }}>
+                <ToggleButtonGroup exclusive sx={{ mt: 1,display:"flex", gap: 1 }}           onChange={(e)=>{console.log("Theme change")}}
+                >
+
                     <ToggleButton
                         sx={{
                             width: "200px",
                             height: "100px",
-                            backgroundColor: mode === "light" ? "#f0f0f0" : "#333",
-                            color: mode === "light" ? "#000" : "#fff",
+                            backgroundColor: "#f0f0f0",
+                            color:  "#000",
+                            border: mode === "light" ? "1px solid #000" : "none",
                             "&:hover": {
-                                backgroundColor: mode === "light" ? "#e0e0e0" : "#444",
+                                backgroundColor:"#e0e0e0",
                             },
                         }}
                         value="light"
@@ -50,17 +52,19 @@ export default function AppearanceSettings() {
                         sx={{
                             width: "200px",
                             height: "100px",
-                            backgroundColor: mode === "dark" ? "#333" : "#f0f0f0",
-                            color: mode === "dark" ? "#fff" : "#000",
+                            backgroundColor:  "#333",
+                            color:  "#fff" ,
+                            border: mode === "dark" ? "1px solid #fff" : "none",
+
                             "&:hover": {
-                                backgroundColor: mode === "dark" ? "#444" : "#e0e0e0",
+                                backgroundColor:  "#444",
                             },
                         }}
                         value="dark"
                         onClick={() => toggleTheme("dark")}
                     >
                         Dark Mode
-                    </ToggleButton>
+                        </ToggleButton>
                 </ToggleButtonGroup>
             )}
         </Box>

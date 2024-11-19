@@ -5,19 +5,25 @@ import Dashboard from "./scenes/Dashboard/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Slide from "@mui/material/Slide";
 import Settings from "./scenes/Settings/Settings";
-import { ThemeModeProvider } from "./ThemeModeContext";
+import {ThemeModeProvider, useThemeMode} from "./ThemeModeContext";
 
 function App() {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   const [isMobileDevice, setIsMobileDevice] = useState(false);
   const theme = useTheme();
 
+    const { mode,toggleTheme} = useThemeMode();
+
   useEffect(() => {
     setIsMobileDevice(isMobile);
   }, [isMobile]);
 
   return (
-    <Box className="App" display="flex">
+    <Box className="App" display="flex"
+    sx={{
+        backgroundColor: mode === "dark" ? "#000000a6 " : "none"
+    }}
+    >
       <Router>
         {isMobileDevice ? null : <Sidebar />}
         <Slide

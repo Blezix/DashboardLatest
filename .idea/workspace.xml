@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="041a7263-df53-4352-acdc-a7e6f7e6c769" name="Changes" comment="update Sidebar to hide text on md breakpoint">
-      <change afterPath="$PROJECT_DIR$/src/scenes/Global/SidebarFooter.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/Global/SidebarHeader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/Global/SidebarMenu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/Settings/AppearanceSettings.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/Settings/LanguageSettings.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/Settings/SaveCancelButtons.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThemeModeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThemeModeContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SidebarFooter.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SidebarItem.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SiteList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserDashboard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Settings/Settings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/Tabs/Prefrence/Prefrence.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/Tabs/Profile/Profile.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/global/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Global/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TransactionsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TransactionsTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/AppearanceSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Settings/AppearanceSettings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/LanguageSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Settings/LanguageSettings.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +25,12 @@
     &quot;assignee&quot;: &quot;Blezix&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Blezix/DashboardLatest.git",
-    "accountId": "53b3dcb2-6967-47a5-acc1-fb7e9ab694b0"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Blezix/DashboardLatest.git&quot;,
+    &quot;accountId&quot;: &quot;d31c8090-ae18-45e1-8ee5-6855aae59199&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -68,7 +57,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.build.executor&quot;: &quot;Run&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -176,6 +165,8 @@
       <workItem from="1731526755184" duration="25000" />
       <workItem from="1731568246797" duration="3508000" />
       <workItem from="1731614198938" duration="5639000" />
+      <workItem from="1731947320814" duration="5048000" />
+      <workItem from="1732009155568" duration="1663000" />
     </task>
     <task id="LOCAL-00001" summary="update Sidebar to hide text on md breakpoint">
       <option name="closed" value="true" />
@@ -203,11 +194,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/scenes/Dashboard/Dashboard.jsx</url>
-          <line>1</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/muiTheme.js</url>
           <line>12</line>
