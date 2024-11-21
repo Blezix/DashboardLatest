@@ -1,31 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import Sidebar from "./scenes/Global/Sidebar";
 import Dashboard from "./scenes/Dashboard/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Slide from "@mui/material/Slide";
 import Settings from "./scenes/Settings/Settings";
-import { ThemeModeProvider, useThemeMode } from "./ThemeModeContext";
+import { ThemeContext } from "./ThemeModeContext";
 
 function App() {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   const [isMobileDevice, setIsMobileDevice] = useState(false);
   const theme = useTheme();
-
-  const { mode, toggleTheme } = useThemeMode();
-
-  toggleTheme(localStorage.getItem("theme"));
-
+  const mode = useContext(ThemeContext);
   useEffect(() => {
     setIsMobileDevice(isMobile);
   }, [isMobile]);
-
   return (
     <Box
       className="App"
       display="flex"
       sx={{
-        backgroundColor: mode === "dark" ? "#000000a6 " : "none",
+        height: "100vh",
+        backgroundColor: mode.themeMode === "light" ? null : "#0000008f",
       }}
     >
       <Router>
@@ -43,7 +39,7 @@ function App() {
             sx={{
               height: isMobileDevice ? "100vh" : "90vh",
               width: isMobileDevice ? "100%" : "80%",
-              bgcolor: theme.palette.paperBackground.main, //color
+              bgcolor: theme.palette.paperBackground.main,
               mt: "auto",
               mb: "auto",
               borderRadius: "15px",

@@ -1,5 +1,6 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
+// Update the lightTheme
 const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -86,9 +87,41 @@ const lightTheme = createTheme({
         },
       },
     },
+    MuiDataGrid: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "transparent",
+        },
+        columnHeaders: {
+          backgroundColor: "white",
+          color: "black",
+          borderBottom: "1px solid lightgrey",
+        },
+        columnHeaderTitle: {
+          fontWeight: "bold",
+        },
+        cell: {
+          backgroundColor: "white",
+          color: "black",
+        },
+        filler: {
+          display: "none",
+        },
+        row: {
+          backgroundColor: "transparent",
+        },
+        footerContainer: {
+          backgroundColor: "transparent",
+        },
+        dateColumnCell: {
+          color: "grey",
+        },
+      },
+    },
   },
 });
 
+// Update the darkTheme
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -179,6 +212,38 @@ const darkTheme = createTheme({
             backgroundColor: "#bdbdbd",
             color: "#242424",
           },
+        },
+      },
+    },
+    MuiDataGrid: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "transparent",
+        },
+
+        columnHeaders: {
+          backgroundColor: "#282828",
+          color: "white",
+          borderBottom: "1px solid grey",
+        },
+        columnHeaderTitle: {
+          fontWeight: "bold",
+        },
+        cell: {
+          backgroundColor: "#404040b5",
+          color: "white",
+        },
+        filler: {
+          display: "none",
+        },
+        row: {
+          backgroundColor: "transparent",
+        },
+        footerContainer: {
+          backgroundColor: "transparent",
+        },
+        dateColumnCell: {
+          color: "grey",
         },
       },
     },
