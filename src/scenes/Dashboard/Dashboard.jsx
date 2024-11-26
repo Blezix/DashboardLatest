@@ -25,49 +25,49 @@ export default function Dashboard() {
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
           {loading ? (
-            <Skeleton variant="rectangular" height={200} />
+            <Skeleton variant="rounded" height={200} />
           ) : (
             <EarningsCard />
           )}
         </Grid>
         <Grid item xs={12} md={4}>
           {loading ? (
-            <Skeleton variant="rectangular" height={200} />
+            <Skeleton variant="rounded" height={200} />
           ) : (
             <SpendingCard />
           )}
         </Grid>
         <Grid item xs={12} md={4}>
           {loading ? (
-            <Skeleton variant="rectangular" height={200} />
+            <Skeleton variant="rounded" height={200} />
           ) : (
             <SavingCard />
           )}
         </Grid>
         <Grid item xs={12} md={8}>
           {loading ? (
-            <Skeleton variant="rectangular" height={400} />
+            <Skeleton variant="rounded" height={400} />
           ) : (
             <BalanceSummary />
           )}
         </Grid>
         <Grid item xs={12} md={4}>
           {loading ? (
-            <Skeleton variant="rectangular" height={200} />
+            <Skeleton variant="rounded" height={200} />
           ) : (
             <CardInfo />
           )}
         </Grid>
         <Grid item xs={12} md={9}>
           {loading ? (
-            <Skeleton variant="rectangular" height={400} />
+            <Skeleton variant="rounded" height={400} />
           ) : (
             <TransactionHistory />
           )}
         </Grid>
         <Grid item xs={12} md={3}>
           {loading ? (
-            <Skeleton variant="rectangular" height={200} />
+            <Skeleton variant="rounded" height={200} />
           ) : (
             <CustomerGrowth />
           )}
