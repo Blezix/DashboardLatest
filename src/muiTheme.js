@@ -11,7 +11,7 @@ const lightTheme = createTheme({
     secondary: {
       main: "#ffffff",
     },
-    buttonColor: {
+    DropFileAccent: {
       main: "#b6bcff", // Add custom button color
     },
     paperBackground: {
@@ -142,7 +142,7 @@ const darkTheme = createTheme({
     secondary: {
       main: "#ffffff",
     },
-    buttonColor: {
+    DropFileAccent: {
       main: "#4d5770", // Add custom button color
     },
     paperBackground: {

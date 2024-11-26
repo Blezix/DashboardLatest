@@ -1,4 +1,4 @@
-# Project Name
+# Dashboard Application
 
 ## Description
 
@@ -22,7 +22,7 @@ This project is a React application that includes a sidebar navigation and themi
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Blezix/DashboardLatest.git
    ```
 2. Navigate to the project directory:
    ```sh
@@ -40,17 +40,17 @@ This project is a React application that includes a sidebar navigation and themi
    npm start
    ```
 2. Open your browser and navigate to `http://localhost:3000`.
-
+3. 
 ## Project Structure
 
 - `src/`: Contains the source code.
-  - `index.js`: Entry point of the application.
-  - `App.js`: Main application component.
-  - `ThemeModeContext.js`: Context for managing theme mode.
-  - `muiTheme.js`: Contains the theme configuration.
-  - `components/`: Contains the various components used in the application.
-    - `Sidebar.jsx`: Sidebar navigation component.
-
+    - `index.js`: Entry point of the application.
+    - `App.js`: Main application component.
+    - `ThemeModeContext.js`: Context for managing theme mode.
+    - `muiTheme.js`: Contains the theme configuration.
+    - `components/`: Contains the various components used in the application.
+        - `Sidebar.jsx`: Sidebar navigation component.
+        - `DropFile.jsx`: Drag-and-drop file upload component.
 ## Theming
 
 The project uses MUI's theming capabilities to support both light and dark modes. The themes are defined in `src/muiTheme.js`.

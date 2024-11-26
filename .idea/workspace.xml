@@ -6,16 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="041a7263-df53-4352-acdc-a7e6f7e6c769" name="Changes" comment="update Sidebar to hide text on md breakpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThemeModeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThemeModeContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TransactionsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TransactionsTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/muiTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/muiTheme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Dashboard/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/DnD/DropFile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/DnD/DropFile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/AppearanceSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Settings/AppearanceSettings.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +176,7 @@
       <workItem from="1732038715212" duration="2901000" />
       <workItem from="1732547605581" duration="8599000" />
       <workItem from="1732573232185" duration="594000" />
+      <workItem from="1732639591710" duration="1758000" />
     </task>
     <task id="LOCAL-00001" summary="update Sidebar to hide text on md breakpoint">
       <option name="closed" value="true" />
@@ -212,7 +206,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/muiTheme.js</url>
-          <line>205</line>
+          <line>226</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
