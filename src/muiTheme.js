@@ -1,6 +1,7 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 // Update the lightTheme
+// Update the lightTheme
 const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -9,6 +10,9 @@ const lightTheme = createTheme({
     },
     secondary: {
       main: "#ffffff",
+    },
+    buttonColor: {
+      main: "#b6bcff", // Add custom button color
     },
     paperBackground: {
       main: "#ffffffd4",
@@ -66,6 +70,13 @@ const lightTheme = createTheme({
           color: "#242424",
           "&:hover": {
             backgroundColor: "#e0e0e0",
+          },
+        },
+        containedButtonColor: {
+          backgroundColor: "#4caf50", // Use custom button color
+          color: "#fff",
+          "&:hover": {
+            backgroundColor: "#388e3c",
           },
         },
         textPrimary: {
@@ -130,6 +141,9 @@ const darkTheme = createTheme({
     },
     secondary: {
       main: "#ffffff",
+    },
+    buttonColor: {
+      main: "#4d5770", // Add custom button color
     },
     paperBackground: {
       main: "rgba(48,47,47,0.78)",
@@ -196,6 +210,13 @@ const darkTheme = createTheme({
             backgroundColor: "#e0e0e0",
           },
         },
+        containedButtonColor: {
+          backgroundColor: "#4caf50", // Use custom button color
+          color: "#fff",
+          "&:hover": {
+            backgroundColor: "#388e3c",
+          },
+        },
         textPrimary: {
           backgroundColor: "transparent",
           color: "#242424",
@@ -220,7 +241,6 @@ const darkTheme = createTheme({
         root: {
           backgroundColor: "transparent",
         },
-
         columnHeaders: {
           backgroundColor: "#282828",
           color: "white",

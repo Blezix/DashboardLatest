@@ -19,7 +19,7 @@ export default function CardInfo() {
           justifyContent: "space-around",
           marginBottom: "40px",
           width: "80%",
-          height: { sm:"120px", lg: "150px" },
+          height: { sm: "120px", lg: "150px" },
           borderRadius: "20px",
           background: "linear-gradient(to right bottom,#666 ,#484848,#4d4d4d)",
           padding: 3,

@@ -52,11 +52,7 @@ export default function Dashboard() {
           )}
         </Grid>
         <Grid item xs={12} md={4}>
-          {loading ? (
-            <Skeleton variant="rounded" height={200} />
-          ) : (
-            <CardInfo />
-          )}
+          {loading ? <Skeleton variant="rounded" height={200} /> : <CardInfo />}
         </Grid>
         <Grid item xs={12} md={9}>
           {loading ? (

@@ -8,7 +8,6 @@ import Settings from "./scenes/Settings/Settings";
 import { ThemeContext } from "./ThemeModeContext";
 import DropFile from "./scenes/DnD/DropFile";
 
-
 function App() {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   const [isMobileDevice, setIsMobileDevice] = useState(false);
@@ -50,7 +49,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/settings" element={<Settings />} />
-                <Route path="/dragndrop" element={<DropFile />} />
+              <Route path="/dragndrop" element={<DropFile />} />
             </Routes>
           </Box>
         </Slide>
