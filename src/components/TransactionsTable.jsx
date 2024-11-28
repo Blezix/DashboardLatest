@@ -1,6 +1,7 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { Box, Chip, Paper, Typography, useTheme } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 // Sample data
 const rows = [
@@ -78,41 +79,42 @@ const columns = [
 // React component
 export default function TransactionsTable() {
   const theme = useTheme();
+  const { t } = useTranslation();
   return (
-    <Paper sx={{ padding: 2 }}>
-      <Typography variant="h6" sx={{ mb: 2 }}>
-        Transactions
-      </Typography>
+      <Paper sx={{ padding: 2 }}>
+        <Typography variant="h6" sx={{ mb: 2 }}>
+          {t("Transactions")}
+        </Typography>
 
-      <Box
-        sx={{
-          maxHeight: {
-            sm: "200px",
-            md: "220px",
-            lg: "250px",
-            xl: "300px",
-          },
-          overflow: "auto",
-          width: "95%",
-          backgroundColor: theme.palette.background.paper, // Use theme background color
-          padding: "10px",
-          borderRadius: "8px",
-          border: `1px solid ${theme.palette.divider}`, // Use theme divider color
-        }}
-      >
-        <DataGrid
-          hideFooter
-          rows={rows}
-          columns={columns}
-          disableExtendRowFullWidth
-          sx={{
-            border: "none",
-            "& .MuiDataGrid-filler": {
-              display: "none", // Hide the filler
-            },
-          }}
-        />
-      </Box>
-    </Paper>
+        <Box
+            sx={{
+              maxHeight: {
+                sm: "200px",
+                md: "220px",
+                lg: "250px",
+                xl: "300px",
+              },
+              overflow: "auto",
+              width: "95%",
+              backgroundColor: theme.palette.background.paper, // Use theme background color
+              padding: "10px",
+              borderRadius: "8px",
+              border: `1px solid ${theme.palette.divider}`, // Use theme divider color
+            }}
+        >
+          <DataGrid
+              hideFooter
+              rows={rows}
+              columns={columns}
+              disableExtendRowFullWidth
+              sx={{
+                border: "none",
+                "& .MuiDataGrid-filler": {
+                  display: "none", // Hide the filler
+                },
+              }}
+          />
+        </Box>
+      </Paper>
   );
 }

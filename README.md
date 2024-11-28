@@ -40,17 +40,19 @@ This project is a React application that includes a sidebar navigation and themi
    npm start
    ```
 2. Open your browser and navigate to `http://localhost:3000`.
-3. 
+3.
+
 ## Project Structure
 
 - `src/`: Contains the source code.
-    - `index.js`: Entry point of the application.
-    - `App.js`: Main application component.
-    - `ThemeModeContext.js`: Context for managing theme mode.
-    - `muiTheme.js`: Contains the theme configuration.
-    - `components/`: Contains the various components used in the application.
-        - `Sidebar.jsx`: Sidebar navigation component.
-        - `DropFile.jsx`: Drag-and-drop file upload component.
+  - `index.js`: Entry point of the application.
+  - `App.js`: Main application component.
+  - `ThemeModeContext.js`: Context for managing theme mode.
+  - `muiTheme.js`: Contains the theme configuration.
+  - `components/`: Contains the various components used in the application.
+    - `Sidebar.jsx`: Sidebar navigation component.
+    - `DropFile.jsx`: Drag-and-drop file upload component.
+
 ## Theming
 
 The project uses MUI's theming capabilities to support both light and dark modes. The themes are defined in `src/muiTheme.js`.

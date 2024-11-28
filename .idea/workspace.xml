@@ -5,15 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="041a7263-df53-4352-acdc-a7e6f7e6c769" name="Changes" comment="update Sidebar to hide text on md breakpoint">
+      <change afterPath="$PROJECT_DIR$/src/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenes/Settings/WorkInProgress.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenes/TextEditor/TextEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/translations/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/translations/pl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/BalanceSummary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/BalanceSummary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CardInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CardInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CustomerGrowth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CustomerGrowth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/EarningsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/EarningsCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/SavingCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/SavingCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/SpendingCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/SpendingCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomerGrowthChart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomerGrowthChart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TransactionsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TransactionsTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/muiTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/muiTheme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/DnD/DropFile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/DnD/DropFile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Global/SidebarFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Global/SidebarFooter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Global/SidebarMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Global/SidebarMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/AppearanceSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Settings/AppearanceSettings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/LanguageSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Settings/LanguageSettings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/SaveCancelButtons.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Settings/Settings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings/SettingsContext.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,7 +59,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Blezix/DashboardLatest.git&quot;,
-    &quot;accountId&quot;: &quot;53b3dcb2-6967-47a5-acc1-fb7e9ab694b0&quot;
+    &quot;accountId&quot;: &quot;d31c8090-ae18-45e1-8ee5-6855aae59199&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -41,26 +73,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HARDPC/Documents/Dashboard23.08/app/src/scenes/DnD&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "ToolWindow.GitHub Copilot Chat.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Jacob/Documents/GitHub/DashboardLatest/src/translations",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactBuddySettings">
     <option name="extensionsIgnore" value="true" />
   </component>
@@ -78,6 +111,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jacob\Documents\GitHub\DashboardLatest\src\translations" />
       <recent name="C:\Users\HARDPC\Documents\Dashboard23.08\app\src\scenes\DnD" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -177,6 +211,12 @@
       <workItem from="1732547605581" duration="8599000" />
       <workItem from="1732573232185" duration="594000" />
       <workItem from="1732639591710" duration="1758000" />
+      <workItem from="1732709828738" duration="295000" />
+      <workItem from="1732722940428" duration="593000" />
+      <workItem from="1732724755582" duration="4684000" />
+      <workItem from="1732777151561" duration="845000" />
+      <workItem from="1732778057822" duration="2177000" />
+      <workItem from="1732811277365" duration="4845000" />
     </task>
     <task id="LOCAL-00001" summary="update Sidebar to hide text on md breakpoint">
       <option name="closed" value="true" />
@@ -205,13 +245,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/muiTheme.js</url>
-          <line>226</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Cards/BalanceSummary.jsx</url>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/scenes/TextEditor/TextEditor.jsx</url>
+          <line>92</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -7,6 +7,8 @@ import Slide from "@mui/material/Slide";
 import Settings from "./scenes/Settings/Settings";
 import { ThemeContext } from "./ThemeModeContext";
 import DropFile from "./scenes/DnD/DropFile";
+import TextEditor from "./scenes/TextEditor/TextEditor";
+
 
 function App() {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
@@ -50,6 +52,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/dragndrop" element={<DropFile />} />
+              <Route path="/texteditor" element={<TextEditor />} />
             </Routes>
           </Box>
         </Slide>

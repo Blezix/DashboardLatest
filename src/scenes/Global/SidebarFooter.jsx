@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Button, useTheme } from "@mui/material";
-
+import { useTranslation } from "react-i18next";
 export default function SidebarFooter() {
   const theme = useTheme();
-
+  const { t } = useTranslation();
   return (
     <Box
       sx={{
@@ -17,7 +17,7 @@ export default function SidebarFooter() {
         sx={{ color: "text.notActive", textTransform: "none" }}
         fullWidth
       >
-        Logout
+          {t("Logout")}
       </Button>
     </Box>
   );

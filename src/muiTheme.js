@@ -1,7 +1,6 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 // Update the lightTheme
-// Update the lightTheme
 const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -126,6 +125,20 @@ const lightTheme = createTheme({
         },
         dateColumnCell: {
           color: "grey",
+        },
+      },
+    },
+    MuiQuill: {
+      styleOverrides: {
+        root: {
+          "& .ql-toolbar": {
+            backgroundColor: "#f0f0f0",
+            color: "#000",
+          },
+          "& .ql-container": {
+            backgroundColor: "#fff",
+            color: "#000",
+          },
         },
       },
     },
@@ -264,6 +277,25 @@ const darkTheme = createTheme({
         },
         dateColumnCell: {
           color: "grey",
+        },
+      },
+    },
+    MuiQuill: {
+      styleOverrides: {
+        root: {
+          ".ql-toolbar": {
+            backgroundColor: "#121212", // Dark background
+            color: "#ffffff", // Light text color
+          },
+          ".ql-toolbar .ql-picker, .ql-toolbar button": {
+            color: "#ffffff", // Toolbar button icons
+          },
+          ".ql-toolbar button:hover, .ql-toolbar .ql-picker:hover": {
+            color: "#90caf9", // Hover effect
+          },
+          ".ql-toolbar button:disabled": {
+            color: "#666666", // Disabled state
+          },
         },
       },
     },

@@ -11,14 +11,14 @@ import {
     Snackbar,
     Alert,
 } from "@mui/material";
+import { useTranslation } from 'react-i18next';
 
 export default function DropFile() {
     const theme = useTheme();
     const [files, setFiles] = React.useState([]);
     const [errorOpen, setErrorOpen] = React.useState(false);
     const [successOpen, setSuccessOpen] = React.useState(false);
-
-
+    const { t } = useTranslation();
     const { getRootProps, getInputProps } = useDropzone({
         onDrop: (acceptedFiles) => {
             if (files.length + acceptedFiles.length <= 5) {
@@ -64,10 +64,10 @@ export default function DropFile() {
                     padding: "20px",
                     textAlign: "center",
                     cursor: "pointer",
-                    margin:"auto",
+                    margin: "auto",
                     color: theme.palette.text.secondary,
                     "&:hover": {
-                        opacity:"0.6"
+                        opacity: "0.6",
                     },
                 }}
             >
@@ -89,7 +89,7 @@ export default function DropFile() {
                             height: "200px",
                         }}
                     />
-                    <p>Drag 'n' drop some files here, or click to select files</p>
+                    <p>{t("DropFileDropzoneTxt")}</p>
                 </Box>
             </Box>
             <Box
@@ -115,7 +115,7 @@ export default function DropFile() {
                     }}
                     variant={"h6"}
                 >
-                    Files
+                    {t("Files")}
                 </Typography>
                 <List
                     sx={{
@@ -149,25 +149,28 @@ export default function DropFile() {
                         sx={{
                             backgroundColor: theme.palette.DropFileAccent.main,
                             color: theme.palette.text.primary,
+                            maxWidth:"40%",
                             "&:hover": {
                                 backgroundColor: theme.palette.DropFileAccent.main,
-                                opacity:"0.7",
+                                opacity: "0.7",
                             },
                         }}
                     >
-                        Submit
+                        {t("Submit")}
                     </Button>
                     <Button
                         onClick={() => setFiles([])}
                         sx={{
                             backgroundColor: theme.palette.DropFileAccent.main,
                             color: theme.palette.text.primary,
+                            maxWidth:"40%",
                             "&:hover": {
                                 backgroundColor: theme.palette.DropFileAccent.main,
-                                opacity:"0.7",                            },
+                                opacity: "0.7",
+                            },
                         }}
                     >
-                        Clear
+                        {t("Clear")}
                     </Button>
                 </Box>
             </Box>
@@ -182,7 +185,7 @@ export default function DropFile() {
                     severity="error"
                     sx={{ width: "100%" }}
                 >
-                    You can only upload up to 5 files.
+                    {t("UploadLimitError")}
                 </Alert>
             </Snackbar>
             <Snackbar
@@ -196,7 +199,7 @@ export default function DropFile() {
                     severity="success"
                     sx={{ width: "100%" }}
                 >
-                    Files uploaded successfully.
+                    {t("UploadSuccess")}
                 </Alert>
             </Snackbar>
         </Box>

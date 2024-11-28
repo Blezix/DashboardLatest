@@ -1,6 +1,7 @@
 import React from "react";
 import { Paper, Typography, Box } from "@mui/material";
 import Chart from "react-apexcharts";
+import { useTranslation } from "react-i18next";
 
 // Sample data
 const data = [
@@ -50,24 +51,26 @@ const chartSeries = [
 ];
 
 export default function BalanceSummary() {
+  const { t } = useTranslation();
+
   return (
-    <Paper sx={{ padding: 2 }}>
-      <Typography variant="h6">Balance Summary</Typography>
-      <Box
-        sx={{ height: "300px", width: "100%", backgroundColor: "transparent" }}
-      >
-        {data && data.length ? (
-          <Chart
-            options={chartOptions}
-            series={chartSeries}
-            type="line" // Use 'line' type
-            height="100%"
-            width="100%"
-          />
-        ) : (
-          <Typography variant="body1">No data available</Typography>
-        )}
-      </Box>
-    </Paper>
+      <Paper sx={{ padding: 2 }}>
+        <Typography variant="h6">{t("BalanceSummary")}</Typography>
+        <Box
+            sx={{ height: "300px", width: "100%", backgroundColor: "transparent" }}
+        >
+          {data && data.length ? (
+              <Chart
+                  options={chartOptions}
+                  series={chartSeries}
+                  type="line" // Use 'line' type
+                  height="100%"
+                  width="100%"
+              />
+          ) : (
+              <Typography variant="body1">{t("NoDataAvailable")}</Typography>
+          )}
+        </Box>
+      </Paper>
   );
 }

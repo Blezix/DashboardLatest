@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Chart from "react-apexcharts";
+import { useTranslation } from "react-i18next";
 
 const data = [
   { id: 0, label: "series A", value: 10 },
@@ -29,24 +30,26 @@ const chartOptions = {
 const chartSeries = data.map((item) => item.value);
 
 export default function CustomerGrowthChart() {
+  const { t } = useTranslation();
+
   return (
-    <Box
-      width={"100%"}
-      height={"100%"}
-      display={"flex"}
-      justifyContent={"center"}
-    >
-      {data && data.length ? (
-        <Chart
-          options={chartOptions}
-          series={chartSeries}
-          type="donut"
-          width="100%"
-          height="100%"
-        />
-      ) : (
-        <Typography variant="body1">No data available</Typography>
-      )}
-    </Box>
+      <Box
+          width={"100%"}
+          height={"100%"}
+          display={"flex"}
+          justifyContent={"center"}
+      >
+        {data && data.length ? (
+            <Chart
+                options={chartOptions}
+                series={chartSeries}
+                type="donut"
+                width="100%"
+                height="100%"
+            />
+        ) : (
+            <Typography variant="body1">{t("NoDataAvailable")}</Typography>
+        )}
+      </Box>
   );
 }
