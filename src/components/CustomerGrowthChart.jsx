@@ -1,3 +1,4 @@
+// change Customer Growth height and series display
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Chart from "react-apexcharts";

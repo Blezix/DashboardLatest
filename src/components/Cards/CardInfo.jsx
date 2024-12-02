@@ -36,7 +36,7 @@ export default function CardInfo() {
             </Box>
             <Box
                 sx={{ display: "flex", justifyContent: "space-between", marginTop: 2 }}
-            ></Box>
+            />
         </Box>
     );
 }

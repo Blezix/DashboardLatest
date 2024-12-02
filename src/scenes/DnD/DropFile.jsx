@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { useDropzone } from "react-dropzone";
 import DropZoneIcon from "@mui/icons-material/Airplay";
 import {
@@ -15,9 +16,9 @@ import { useTranslation } from 'react-i18next';
 
 export default function DropFile() {
     const theme = useTheme();
-    const [files, setFiles] = React.useState([]);
-    const [errorOpen, setErrorOpen] = React.useState(false);
-    const [successOpen, setSuccessOpen] = React.useState(false);
+    const [files, setFiles] = useState([]);
+    const [errorOpen, setErrorOpen] = useState(false);
+    const [successOpen, setSuccessOpen] = useState(false);
     const { t } = useTranslation();
     const { getRootProps, getInputProps } = useDropzone({
         onDrop: (acceptedFiles) => {

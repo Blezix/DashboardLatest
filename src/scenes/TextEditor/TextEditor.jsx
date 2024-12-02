@@ -5,6 +5,7 @@ import "react-quill/dist/quill.bubble.css";
 import { Box, Typography, useTheme } from "@mui/material";
 import { ThemeContext } from "../../ThemeModeContext";
 import { useTranslation } from "react-i18next";
+import SafeHtmlDisplay from "../../components/SafeHtmlDisplay";
 
 export default function TextEditor() {
     const [content, setContent] = useState("");
@@ -14,7 +15,6 @@ export default function TextEditor() {
 
     const handleContentChange = (value) => {
         setContent(value);
-        console.log(themeMode);
     };
 
     const modules = {
@@ -28,6 +28,35 @@ export default function TextEditor() {
             ["clean"],
         ],
     };
+
+    // Static header and footer templates
+    const headerTemplate = `
+        <div style="text-align: center; font-size: 1.5rem; font-weight: bold; margin-bottom: 20px;">
+            Raport
+        </div>
+    `;
+
+    const footerTemplate = `
+        <div style="text-align: center; font-size: 1rem; color: grey; margin-top: 20px;">
+            © 2024 Footer
+        </div>
+    `;
+
+    // Combine header, content, and footer
+    const combinedContent = `
+        <Box sx={{
+            padding: 3,
+            display: "flex",
+            flexDirection: "column",
+            gap: 2,
+            justifyContent: "space-between",
+           
+        }}>
+        ${headerTemplate}
+        <div>${content}</div>
+        ${footerTemplate}
+        </Box>
+    `;
 
     return (
         <Box sx={{ padding: 3, width: "100%", overflow: "auto" }}>
@@ -45,6 +74,7 @@ export default function TextEditor() {
                     justifyContent: "space-between",
                 }}
             >
+                {/* Text Editor */}
                 <Box
                     sx={{
                         flex: 1,
@@ -62,7 +92,7 @@ export default function TextEditor() {
                         },
                         ".ql-picker-options": {
                             color: themeMode === "light" ? "#222" : "#fff",
-                            backgroundColor: themeMode === "light" ? "#ffffff" : "#3a3a3a",
+                            backgroundColor: themeMode === "light" ? "#fff" : "#3a3a3a",
                         },
                     }}
                 >
@@ -73,6 +103,8 @@ export default function TextEditor() {
                         theme="snow"
                     />
                 </Box>
+
+                {/* Preview with Header and Footer */}
                 <Box
                     sx={{
                         flex: 1,
@@ -86,8 +118,9 @@ export default function TextEditor() {
                         "& .ql-align-right": { textAlign: "right" },
                         "& .ql-align-justify": { textAlign: "justify" },
                     }}
-                    dangerouslySetInnerHTML={{ __html: content }}
-                />
+                >
+                    <SafeHtmlDisplay html={combinedContent} />
+                </Box>
             </Box>
         </Box>
     );

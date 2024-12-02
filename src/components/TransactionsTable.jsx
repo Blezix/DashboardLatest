@@ -98,7 +98,6 @@ export default function TransactionsTable() {
               width: "95%",
               padding: "10px",
               borderRadius: "8px",
-              border: `1px solid ${theme.palette.divider}`, // Use theme divider color
                 "& *" : {
                     background:"transparent !important"
                 }

@@ -1,3 +1,5 @@
+//change the height of heading
+
 import React from "react";
 import { Paper, Typography, Box } from "@mui/material";
 import CustomerGrowthChart from "../CustomerGrowthChart";
@@ -7,7 +9,10 @@ export default function CustomerGrowth() {
     const { t } = useTranslation();
 
     return (
-        <Paper sx={{ padding: 2 }}>
+        <Paper  sx={{
+               maxHeight:"100%",
+                width: "95%",
+                padding: "10px"}}>
             <Typography variant="h6">{t("CustomerGrowth")}</Typography>
             <Box height={"300px"} width={"100%"}>
                 <CustomerGrowthChart />

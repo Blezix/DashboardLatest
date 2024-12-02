@@ -12,10 +12,10 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading delay
+
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 200);
 
     return () => clearTimeout(timer);
   }, []);

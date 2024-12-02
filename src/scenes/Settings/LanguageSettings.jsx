@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Box, Typography, TextField, useTheme, Skeleton } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import { useTranslation } from "react-i18next";
-
+import LanguagePreloader from "../../components/LanguagePreloader";
 export default function LanguageSettings({ language, setLanguage }) {
     const theme = useTheme();
     const { t, i18n } = useTranslation();
@@ -11,7 +11,7 @@ export default function LanguageSettings({ language, setLanguage }) {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 1000);
+        }, 200);
 
         return () => clearTimeout(timer);
     }, []);
@@ -31,13 +31,7 @@ export default function LanguageSettings({ language, setLanguage }) {
 
     if (loading) {
         return (
-            <Box sx={{ mb: 4 }}>
-                <Skeleton variant="text" width={100} height={40} />
-                <Box sx={{ display: "flex", alignItems: "center", mt: 1 }}>
-                    <Skeleton variant="circular" width={40} height={40} />
-                    <Skeleton variant="rectangular" width={200} height={56} sx={{ ml: 2 }} />
-                </Box>
-            </Box>
+            <LanguagePreloader />
         );
     }
 

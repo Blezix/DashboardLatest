@@ -28,8 +28,8 @@ function App() {
       }}
     >
       <Router>
-        {isMobileDevice ? null : <Sidebar />}
-        <Slide
+          {!isMobileDevice && <Sidebar />}
+          <Slide
           direction="up"
           in={true}
           mountOnEnter

@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Box, Tabs, Tab, Typography, Divider, useTheme } from "@mui/material";
-import AppearanceSettings from "./AppearanceSettings";
-import LanguageSettings from "./LanguageSettings";
-import WorkInProgress from "./WorkInProgress";
-import { useTranslation } from "react-i18next";
 
+import { useTranslation } from "react-i18next";
+import TabResolver from "../../components/TabResolver";
 export default function Settings() {
     const [language, setLanguage] = useState("en");
     const [tabValue, setTabValue] = useState(0);
@@ -25,41 +23,7 @@ export default function Settings() {
                 <Tab label={t("Profile")} />
                 <Tab label={t("Appearance")} />
             </Tabs>
-            {tabValue === 0 && (
-                <Box
-                    sx={{
-                        mt: 3,
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        minHeight: "300px",
-                        color: theme.palette.text.primary,
-                    }}
-                >
-                    <WorkInProgress />
-                </Box>
-            )}
-            {tabValue === 1 && (
-                <Box
-                    sx={{
-                        mt: 3,
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        minHeight: "300px",
-                        color: theme.palette.text.primary,
-                    }}
-                >
-                    <WorkInProgress />
-                </Box>
-            )}
-            {tabValue === 2 && (
-                <Box sx={{ mt: 3 }}>
-                    <AppearanceSettings />
-                    <Divider sx={{ my: 4 }} />
-                    <LanguageSettings language={language} setLanguage={setLanguage} />
-                </Box>
-            )}
+        <TabResolver tabValue={tabValue} language={language} setLanguage={setLanguage} />
         </Box>
     );
 }
