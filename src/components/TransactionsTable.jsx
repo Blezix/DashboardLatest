@@ -96,10 +96,12 @@ export default function TransactionsTable() {
               },
               overflow: "auto",
               width: "95%",
-              backgroundColor: theme.palette.background.paper, // Use theme background color
               padding: "10px",
               borderRadius: "8px",
               border: `1px solid ${theme.palette.divider}`, // Use theme divider color
+                "& *" : {
+                    background:"transparent !important"
+                }
             }}
         >
           <DataGrid
@@ -109,6 +111,7 @@ export default function TransactionsTable() {
               disableExtendRowFullWidth
               sx={{
                 border: "none",
+                  backgroundColor:"transparent",
                 "& .MuiDataGrid-filler": {
                   display: "none", // Hide the filler
                 },
