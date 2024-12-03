@@ -1,6 +1,5 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
-// Update the lightTheme
 const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -11,7 +10,7 @@ const lightTheme = createTheme({
       main: "#ffffff",
     },
     DropFileAccent: {
-      main: "#a0dfff", 
+      main: "#a0dfff",
     },
     paperBackground: {
       main: "#ffffffd4",
@@ -72,7 +71,7 @@ const lightTheme = createTheme({
           },
         },
         containedButtonColor: {
-          backgroundColor: "#4caf50", // Use custom button color
+          backgroundColor: "#4caf50",
           color: "#fff",
           "&:hover": {
             backgroundColor: "#388e3c",
@@ -145,7 +144,6 @@ const lightTheme = createTheme({
   },
 });
 
-// Update the darkTheme
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -156,7 +154,7 @@ const darkTheme = createTheme({
       main: "#ffffff",
     },
     DropFileAccent: {
-      main: "#466270", // Add custom button color
+      main: "#466270",
     },
     paperBackground: {
       main: "rgba(48,47,47,0.78)",
@@ -224,7 +222,7 @@ const darkTheme = createTheme({
           },
         },
         containedButtonColor: {
-          backgroundColor: "#4caf50", // Use custom button color
+          backgroundColor: "#4caf50",
           color: "#fff",
           "&:hover": {
             backgroundColor: "#388e3c",
@@ -284,17 +282,17 @@ const darkTheme = createTheme({
       styleOverrides: {
         root: {
           ".ql-toolbar": {
-            backgroundColor: "#121212", // Dark background
-            color: "#ffffff", // Light text color
+            backgroundColor: "#121212",
+            color: "#ffffff",
           },
           ".ql-toolbar .ql-picker, .ql-toolbar button": {
-            color: "#ffffff", // Toolbar button icons
+            color: "#ffffff",
           },
           ".ql-toolbar button:hover, .ql-toolbar .ql-picker:hover": {
-            color: "#90caf9", // Hover effect
+            color: "#90caf9",
           },
           ".ql-toolbar button:disabled": {
-            color: "#666666", // Disabled state
+            color: "#666666",
           },
         },
       },

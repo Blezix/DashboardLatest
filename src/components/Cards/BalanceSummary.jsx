@@ -3,7 +3,6 @@ import { Paper, Typography, Box } from "@mui/material";
 import Chart from "react-apexcharts";
 import { useTranslation } from "react-i18next";
 
-// Sample data
 const data = [
   { id: 0, label: "Jan", value: 30 },
   { id: 1, label: "Feb", value: 20 },
@@ -12,37 +11,34 @@ const data = [
   { id: 4, label: "May", value: 60 },
 ];
 
-// Chart options for line chart
 const chartOptions = {
   chart: {
-    type: "line", // Change chart type to 'line'
+    type: "line",
   },
   xaxis: {
     categories: data.map((item) => item.label),
   },
   stroke: {
-    curve: "smooth", // Optional: to make the line smooth
-    width: 3, // Line thickness
+    curve: "smooth",
+    width: 3,
   },
   markers: {
-    size: 5, // Marker size
+    size: 5,
     colors: ["rgba(69,190,255,0.83)"],
   },
   fill: {
-    colors: ["rgba(0,51,255,0.68)"], // Line color fill
-    opacity: 0.3, // Transparency of the fill color
+    colors: ["rgba(0,51,255,0.68)"],
+    opacity: 0.3,
   },
   grid: {
-    show: true, // Show grid lines
+    show: true,
   },
-
   tooltip: {
-    shared: true, // Show data for all series at a time
-    intersect: false, // Tooltip shows when mouse hovers over any point
+    shared: true,
+    intersect: false,
   },
 };
 
-// Chart series data
 const chartSeries = [
   {
     name: "Balance",
@@ -54,23 +50,23 @@ export default function BalanceSummary() {
   const { t } = useTranslation();
 
   return (
-      <Paper sx={{ padding: 2 }}>
-        <Typography variant="h6">{t("BalanceSummary")}</Typography>
-        <Box
-            sx={{ height: "300px", width: "100%", backgroundColor: "transparent" }}
-        >
-          {data && data.length ? (
-              <Chart
-                  options={chartOptions}
-                  series={chartSeries}
-                  type="line" // Use 'line' type
-                  height="100%"
-                  width="100%"
-              />
-          ) : (
-              <Typography variant="body1">{t("NoDataAvailable")}</Typography>
-          )}
-        </Box>
-      </Paper>
+    <Paper sx={{ padding: 2 }}>
+      <Typography variant="h6">{t("BalanceSummary")}</Typography>
+      <Box
+        sx={{ height: "300px", width: "100%", backgroundColor: "transparent" }}
+      >
+        {data && data.length ? (
+          <Chart
+            options={chartOptions}
+            series={chartSeries}
+            type="line"
+            height="100%"
+            width="100%"
+          />
+        ) : (
+          <Typography variant="body1">{t("NoDataAvailable")}</Typography>
+        )}
+      </Box>
+    </Paper>
   );
 }

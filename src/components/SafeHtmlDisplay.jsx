@@ -3,9 +3,9 @@ import DOMPurify from "dompurify";
 import parse from "html-react-parser";
 
 const SafeHtmlDisplay = ({ html }) => {
-    const sanitizedHtml = DOMPurify.sanitize(html);
+  const safeHtml = DOMPurify.sanitize(html);
 
-    return <div>{parse(sanitizedHtml)}</div>;
+  return <div>{parse(safeHtml)}</div>;
 };
 
 export default SafeHtmlDisplay;

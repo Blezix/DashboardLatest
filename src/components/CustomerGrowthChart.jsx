@@ -33,25 +33,25 @@ export default function CustomerGrowthChart() {
   const { t } = useTranslation();
 
   return (
-      <Box
-          width={"100%"}
-          height={"100%"}
-          display={"flex"}
-          justifyContent={"center"}
-          paddingTop={2}
-      >
-        {data && data.length ? (
-            <Chart
-                options={chartOptions}
-                series={chartSeries}
-                type="donut"
-                width="100%"
-                height="100%"
-                paddingTop={"16px"}
-            />
-        ) : (
-            <Typography variant="body1">{t("NoDataAvailable")}</Typography>
-        )}
-      </Box>
+    <Box
+      width={"100%"}
+      height={"100%"}
+      display={"flex"}
+      justifyContent={"center"}
+      paddingTop={2}
+    >
+      {data && data.length ? (
+        <Chart
+          options={chartOptions}
+          series={chartSeries}
+          type="donut"
+          width="100%"
+          height="100%"
+          paddingTop={"16px"}
+        />
+      ) : (
+        <Typography variant="body1">{t("NoDataAvailable")}</Typography>
+      )}
+    </Box>
   );
 }
