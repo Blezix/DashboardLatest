@@ -1,4 +1,3 @@
-// change Customer Growth height and series display
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Chart from "react-apexcharts";
@@ -39,6 +38,7 @@ export default function CustomerGrowthChart() {
           height={"100%"}
           display={"flex"}
           justifyContent={"center"}
+          paddingTop={2}
       >
         {data && data.length ? (
             <Chart
@@ -47,6 +47,7 @@ export default function CustomerGrowthChart() {
                 type="donut"
                 width="100%"
                 height="100%"
+                paddingTop={"16px"}
             />
         ) : (
             <Typography variant="body1">{t("NoDataAvailable")}</Typography>
